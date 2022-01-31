@@ -1,0 +1,9 @@
+<form (ngSubmit)="buscar()" autocomplete="off">
+	<label>Digite el nombre a filtrar:<br/></label>
+    <input type="text"
+           name="filtro"
+           class="form-control"
+           [(ngModel)]="filtro"
+           (input)="teclaPresionada()"
+           [placeholder]="placeholder"/>
+</form>
